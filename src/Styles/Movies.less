@@ -1,0 +1,42 @@
+.movies{
+    // width:95%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr); 
+    scroll-behavior: auto;
+    scroll-behavior: inherit;
+    overflow-x: scroll;   
+    overflow-y: hidden; 
+}
+.movies>span{
+    width:25vw;
+    height:40vh;
+}
+a>img{
+    width:25vw;
+    height: auto;
+    z-index: 0;
+}
+.iconfalse{
+    display: flex;
+    // vertical-align:middle;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 2vh;
+    height: 2vh;
+    z-index: 1;
+    position: relative;
+    top:-11%;
+    left:1%;
+}
+.iconfalse>p{
+    margin: 0;
+    font-weight: 900;
+    color:  black;
+    text-overflow: hidden;
+    font-size:200%;
+}
+.movies::-webkit-scrollbar{
+    width:1em;
+}
